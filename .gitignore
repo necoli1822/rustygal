@@ -1,0 +1,28 @@
+# Rust build artifacts
+/target/
+**/*.rs.bk
+*.pdb
+
+# Cargo.lock for libraries (keep for binaries)
+# We'll keep it since this is a binary project
+# Cargo.lock
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test outputs
+test_output/
+*.tmp
+
+# Development files (not for distribution)
+comparison/
+NEXT_SESSION_PROMPT.md
+*.draft.md

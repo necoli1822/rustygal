@@ -1,0 +1,10 @@
+# Optional machine-specific codegen (NOT enabled by default — keeps the build
+# portable). target-cpu=native bakes in this host's ISA (AVX2/AVX-512/FMA, etc.)
+# and gave ~3% on our benchmark machine while staying byte-identical.
+#
+# To enable for a local build (only run on a CPU matching the build host):
+#   RUSTFLAGS="-C target-cpu=native" cargo build --release
+# or uncomment below:
+#
+# [build]
+# rustflags = ["-C", "target-cpu=native"]
